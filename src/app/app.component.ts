@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  brandName = 'Developers Notebook';
+  brandName = 'Lean Stack';
+  title = 'A Developers Notebook';
 }
