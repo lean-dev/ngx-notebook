@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {TodosModule} from './todos/todos.module';
+import {ShellModule} from "./shell/shell.module";
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import {TodosModule} from './todos/todos.module';
     AppRoutingModule,
 
     // Feature Modules
+    ShellModule,
     TodosModule
   ],
   providers: [],
