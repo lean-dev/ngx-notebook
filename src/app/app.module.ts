@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import {TodosModule} from './todos/todos.module';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    // Feature Modules
+    TodosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

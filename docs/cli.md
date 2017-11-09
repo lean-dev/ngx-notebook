@@ -13,3 +13,20 @@ Weitere Optionen des new-Kommandos sind:
 
 TODO: list all options
 
+### CLI Anpassungen
+
+* App-Prefix entfernen
+* Default CSS Preprocessor wählen, falls gewünscht
+
+### Modules
+
+Feature-Module werden ebenso mit der Option ```--routing``` erzeugt:
+
+    ng g m --routing todos
+
+### Components
+
+Bei der Komponenten-Erzeugung immer dran denken das Module zu setzen und den Pfad mitzugeben:
+
+    ng g c -m todos todos/todo-app
+
