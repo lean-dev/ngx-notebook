@@ -15,7 +15,7 @@ TODO: list all options
 
 ### CLI Anpassungen
 
-* App-Prefix entfernen
+* App-Prefix entfernen (auch in der tslint.json anpassen)
 * Default CSS Preprocessor wählen, falls gewünscht
 
 ### Modules
