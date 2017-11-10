@@ -9,6 +9,6 @@ import { InMemoryAppComponent } from './in-memory-app/in-memory-app.component';
     CommonModule,
     TodosRoutingModule
   ],
-  declarations: [InMemoryAppComponent]
+  declarations: [InMemoryAppComponent, TodoComponent]
 })
 export class TodosModule { }
