@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TodoAppComponent } from './todo-app/todo-app.component';
+import { InMemoryAppComponent } from './in-memory-app/in-memory-app.component';
 
 const routes: Routes = [
-  { path: 'todos', component: TodoAppComponent }
+  { path: 'todos', component: InMemoryAppComponent }
 ];
 
 @NgModule({

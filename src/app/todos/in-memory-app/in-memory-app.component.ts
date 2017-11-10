@@ -2,11 +2,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'todo-app',
-  templateUrl: './todo-app.component.html',
-  styleUrls: ['./todo-app.component.scss'],
+  templateUrl: './in-memory-app.component.html',
+  styleUrls: ['./in-memory-app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class TodoAppComponent implements OnInit {
+export class InMemoryAppComponent implements OnInit {
 
   constructor() { }
 
