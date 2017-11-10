@@ -1,0 +1,7 @@
+<section class="todo-input">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="What needs to be done?"
+      [(ngModel)]="txt" (keyup.enter)="handleSubmit()"
+    >
+  </div>
+</section>

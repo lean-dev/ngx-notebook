@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { TodosRoutingModule } from './todos-routing.module';
 import { InMemoryAppComponent } from './in-memory-app/in-memory-app.component';
+import { TodoInputComponent } from './todo-input/todo-input.component';
 
 @NgModule({
   imports: [
-    CommonModule,
+    FormsModule,
     TodosRoutingModule
   ],
-  declarations: [InMemoryAppComponent, TodoComponent]
+  declarations: [InMemoryAppComponent, TodoInputComponent]
 })
 export class TodosModule { }
