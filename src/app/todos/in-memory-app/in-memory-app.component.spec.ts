@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { InMemoryAppComponent } from './in-memory-app.component';
 import {TodoInputComponent} from '../todo-input/todo-input.component';
 import { FormsModule } from '@angular/forms';
+import { TodoListComponent } from '../todo-list/todo-list.component';
 
 describe('InMemoryAppComponent', () => {
   let component: InMemoryAppComponent;
@@ -11,7 +12,7 @@ describe('InMemoryAppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ FormsModule ],
-      declarations: [ InMemoryAppComponent, TodoInputComponent ]
+      declarations: [ InMemoryAppComponent, TodoInputComponent, TodoListComponent ]
     })
     .compileComponents();
   }));
