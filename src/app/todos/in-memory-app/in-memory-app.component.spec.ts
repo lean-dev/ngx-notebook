@@ -4,6 +4,7 @@ import { InMemoryAppComponent } from './in-memory-app.component';
 import {TodoInputComponent} from '../todo-input/todo-input.component';
 import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from '../todo-list/todo-list.component';
+import {By} from "@angular/platform-browser";
 
 describe('InMemoryAppComponent', () => {
   let component: InMemoryAppComponent;
@@ -30,5 +31,14 @@ describe('InMemoryAppComponent', () => {
   it('should have an empty todos array property', () => {
     expect(component.todos).toBeDefined();
     expect(component.todos.length).toBe(0);
+  });
+
+  it('handles the todoEntered event in a proper way', () => {
+    spyOn(component, 'createTodo');
+
+    const todoInput = fixture.debugElement.query(By.directive(TodoInputComponent));
+    todoInput.triggerEventHandler('todoEntered', 'Testing');
+
+    expect(component.createTodo).toHaveBeenCalledWith('Testing');
   });
 });
