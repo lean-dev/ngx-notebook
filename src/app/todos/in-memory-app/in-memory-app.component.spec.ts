@@ -4,7 +4,8 @@ import { InMemoryAppComponent } from './in-memory-app.component';
 import {TodoInputComponent} from '../todo-input/todo-input.component';
 import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from '../todo-list/todo-list.component';
-import {By} from "@angular/platform-browser";
+import {By} from '@angular/platform-browser';
+import {TodoItemComponent} from '../todo-item/todo-item.component';
 
 describe('InMemoryAppComponent', () => {
   let component: InMemoryAppComponent;
@@ -13,7 +14,7 @@ describe('InMemoryAppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ FormsModule ],
-      declarations: [ InMemoryAppComponent, TodoInputComponent, TodoListComponent ]
+      declarations: [ InMemoryAppComponent, TodoInputComponent, TodoListComponent, TodoItemComponent ]
     })
     .compileComponents();
   }));
