@@ -1,11 +1,9 @@
 <ul class="list-group">
   <li *ngFor="let t of todos" class="list-group-item list-group-item-action">
     <div class="view d-flex">
-      <label for="todo-{{t.id}}">
-        <input type="checkbox" id="todo-{{t.id}}">
-        {{ t.txt }}
-      </label>
-      <button>Delete</button>
+      <input type="checkbox" id="todo-{{t.id}}">
+      <label for="todo-{{t.id}}">{{ t.txt }}</label>
+      <button class="destroy btn btn-outline-danger"><i class="fa fa-remove"></i></button>
     </div>
     <div class="edit"></div>
   </li>
