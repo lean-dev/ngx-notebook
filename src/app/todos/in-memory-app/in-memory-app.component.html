@@ -1,2 +1,15 @@
-<todo-input (todoEntered)="createTodo($event)"></todo-input>
-<todo-list [todos]="todos"></todo-list>
+<div class="row justify-content-md-center">
+  <div class="col col-md-9">
+    <h2>Todos</h2>
+  </div>
+</div>
+<div class="row justify-content-md-center">
+  <div class="col col-md-9">
+    <todo-input (todoEntered)="createTodo($event)"></todo-input>
+  </div>
+</div>
+<div class="row justify-content-md-center">
+  <div class="col col-md-9">
+    <todo-list [todos]="todos"></todo-list>
+  </div>
+</div>
