@@ -16,6 +16,7 @@ describe('TodoActionbarComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TodoActionbarComponent);
     component = fixture.componentInstance;
+    component.todos = [];
     fixture.detectChanges();
   });
 
