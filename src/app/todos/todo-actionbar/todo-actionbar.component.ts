@@ -14,4 +14,10 @@ export class TodoActionbarComponent {
   hasCompleted(): boolean {
     return this.todos.findIndex( t => t.done) !== -1;
   }
+
+  removeCompletedTodos() {
+    // First data-flow issue: need to modify the current array! Not filtering to a new one ...
+    this.todos.filter(t => t.done)
+      .forEach( (t) => { this.todos.splice(this.todos.indexOf(t), 1); });
+  }
 }
