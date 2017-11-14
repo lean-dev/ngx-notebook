@@ -7,6 +7,7 @@ import { TodoInputComponent } from './todo-input/todo-input.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { CommonModule } from '@angular/common';
 import { TodoItemComponent } from './todo-item/todo-item.component';
+import { TodoActionbarComponent } from './todo-actionbar/todo-actionbar.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
     FormsModule,
     TodosRoutingModule
   ],
-  declarations: [InMemoryAppComponent, TodoInputComponent, TodoListComponent, TodoItemComponent]
+  declarations: [InMemoryAppComponent, TodoInputComponent, TodoListComponent, TodoItemComponent, TodoActionbarComponent]
 })
 export class TodosModule { }
