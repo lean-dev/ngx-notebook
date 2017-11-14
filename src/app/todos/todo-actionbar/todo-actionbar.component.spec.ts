@@ -23,4 +23,8 @@ describe('TodoActionbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should determine the correct hasCompleted() value', () => {
+    expect(component.hasCompleted()).toBe(false);
+  });
 });
