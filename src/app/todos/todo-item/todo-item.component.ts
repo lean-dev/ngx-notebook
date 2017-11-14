@@ -1,20 +1,20 @@
-import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, EventEmitter, Input, Output, ViewEncapsulation} from '@angular/core';
 import { Todo } from '../model/todo';
 
 @Component({
   selector: 'todo-item',
   templateUrl: './todo-item.component.html',
-  styleUrls: ['./todo-item.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./todo-item.component.scss']
 })
-export class TodoItemComponent implements OnInit {
+export class TodoItemComponent {
 
   @Input()
   todo: Todo;
 
-  constructor() { }
+  @Output()
+  todoDeleted = new EventEmitter<Todo>();
 
-  ngOnInit() {
+  deleteTodo() {
+    this.todoDeleted.emit(this.todo);
   }
-
 }

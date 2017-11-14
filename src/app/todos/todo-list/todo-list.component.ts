@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { Todo } from '../model/todo';
 
 @Component({
@@ -7,14 +7,13 @@ import { Todo } from '../model/todo';
   styleUrls: ['./todo-list.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class TodoListComponent implements OnInit {
+export class TodoListComponent {
 
   @Input()
   todos: Todo[];
 
-  constructor() { }
-
-  ngOnInit() {
+  deleteTodo(todo: Todo) {
+    const ix = this.todos.indexOf(todo);   // Simple, but effective - we have all the same instances
+    this.todos.splice(ix, 1);
   }
-
 }

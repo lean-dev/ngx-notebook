@@ -2,7 +2,7 @@
   <div class="view d-flex">
     <input type="checkbox" id="todo-{{todo.id}}">
     <label for="todo-{{todo.id}}">{{ todo.txt }}</label>
-    <button class="destroy btn btn-outline-danger"><i class="fa fa-remove"></i></button>
+    <button (click)="deleteTodo()" class="destroy btn btn-outline-danger"><i class="fa fa-remove"></i></button>
   </div>
   <div class="edit"></div>
 </li>
