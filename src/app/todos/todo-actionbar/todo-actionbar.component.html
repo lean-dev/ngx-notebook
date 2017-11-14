@@ -1,5 +1,5 @@
 <li class="list-group-item list-group-item-light d-flex">
   <input type="checkbox" id="markAll">
   <label for="markAll" class="mr-auto">Trigger all</label>
-  <button>Clear completed</button>
+  <button *ngIf="hasCompleted()">Clear completed</button>
 </li>

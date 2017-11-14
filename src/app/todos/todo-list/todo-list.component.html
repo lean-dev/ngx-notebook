@@ -1,4 +1,4 @@
 <ul class="list-group">
-  <todo-actionbar></todo-actionbar>
+  <todo-actionbar [todos]="todos"></todo-actionbar>
   <todo-item *ngFor="let t of todos" [todo]="t" (todoDeleted)="deleteTodo($event)"></todo-item>
 </ul>

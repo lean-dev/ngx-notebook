@@ -1,15 +1,17 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, Input } from '@angular/core';
+import { Todo } from '../model/todo';
 
 @Component({
   selector: 'todo-actionbar',
   templateUrl: './todo-actionbar.component.html',
   styleUrls: ['./todo-actionbar.component.scss']
 })
-export class TodoActionbarComponent implements OnInit {
+export class TodoActionbarComponent {
 
-  constructor() { }
+  @Input()
+  todos: Todo[];
 
-  ngOnInit() {
+  hasCompleted() {
+    return this.todos.findIndex( t => t.done);
   }
-
 }
