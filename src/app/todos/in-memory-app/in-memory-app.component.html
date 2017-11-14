@@ -8,7 +8,7 @@
     <todo-input (todoEntered)="createTodo($event)"></todo-input>
   </div>
 </div>
-<div class="row justify-content-md-center">
+<div *ngIf="todos.length > 0" class="row justify-content-md-center">
   <div class="col col-md-9">
     <todo-list [todos]="todos"></todo-list>
   </div>
