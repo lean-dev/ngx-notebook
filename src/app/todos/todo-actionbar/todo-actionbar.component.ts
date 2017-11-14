@@ -11,7 +11,7 @@ export class TodoActionbarComponent {
   @Input()
   todos: Todo[];
 
-  hasCompleted() {
+  hasCompleted(): boolean {
     return this.todos.findIndex( t => t.done) !== -1;
   }
 }
