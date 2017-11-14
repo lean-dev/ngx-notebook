@@ -1,0 +1,35 @@
+.list-group-item {
+  height: 3em;
+  padding-left: 0;
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label {
+    padding-left: 2em;
+  }
+
+  input[type=checkbox] + label:before {
+    font-family: FontAwesome;
+    content: '\f096';
+    width: 1em;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  input[type=checkbox]:checked + label:before {
+    content: "\f046";
+  }
+
+  button {
+    background: transparent;
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+  }
+  button:hover {
+    text-decoration: underline;
+    color: #666;
+  }
+}
